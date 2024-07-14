@@ -1,0 +1,22 @@
+using python
+read Amazon.html and parse it with BeautifulSoup
+find all
+div  with class="puis-card-container s-card-container s-overflow-hidden aok-relative puis-include-content-margin puis puis-v1nyb4igz33igf2j9heq96r9jtz s-latency-cf-section puis-card-border"
+
+for all div
+try find span with class="a-size-medium a-color-base a-text-normal" and store it in Names
+except Names=""
+try find span with class="a-price-whole" and store it in Prices
+except Prices=""
+try find span  with class="a-size-base s-underline-text"and tore it in Reviews
+except Reviews=""
+try find span with class="a-icon-alt" and store it in Ratings
+except Ratings=""
+try find a with class="a-size-base a-link-normal s-underline-text s-underline-link-text s-link-style" and store it in Author
+except Author=""
+try find div with class="a-section aok-relative s-image-fixed-height" and store it in image_div
+try find img with class="s-image" and src and store it in Image_urls
+except Image_urls=""
+
+
+open an excel file and write Names,Prices,Reviews ,Ratings and Author in it.
